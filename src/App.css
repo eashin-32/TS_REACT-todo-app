@@ -1,3 +1,7 @@
+*{
+  margin: 0;
+  padding: 0;
+}
 .App {
   text-align: center;
   min-height: 100vh;
@@ -5,16 +9,23 @@
 }
 input{
   padding: 15px;
-
+  outline: none;
+  border: none;
+  margin-left: 5px;
 }
 button{
   padding: 15px;
-  width: 50px;
+  width: 5rem;
   background-color: cornflowerblue;
   color: white;
+  border: none;
+  outline: none;
 }
 .card{
   background-color: white;
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
+  padding: 5px 0px;
+  margin-top: 5px;
+  border-radius: 10px;
 }

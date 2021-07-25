@@ -13,22 +13,23 @@ const Todos = () => {
     
     const handleSubmit = () => {
        setTaskList([...TaskList, Task])
-      setTask({
-          task:'',
-          day: NaN
-       })
+    //  setTask({
+       //   task:'',
+        //  day: NaN
+     //  })
     }
 
     const handleInput = (e : React.ChangeEvent<HTMLInputElement>) =>{
         setTask({...Task, [e.target.name] : e.target.value})
     }
+    console.log(Task)
     return (
         <div>
             <h1>Todo List</h1>
            <div>
            <input 
                 type="text"  
-                name='todo' 
+                name='task' 
                 value={Task.task}
                 onChange={handleInput}
                 placeholder='Add a Task'
