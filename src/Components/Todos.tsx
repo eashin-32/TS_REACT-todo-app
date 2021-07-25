@@ -25,7 +25,7 @@ const Todos = () => {
     return (
         <div>
             <h1>Todo List</h1>
-           <form onSubmit={handleSubmit}>
+           <div>
            <input 
                 type="text"  
                 name='todo' 
@@ -40,8 +40,8 @@ const Todos = () => {
                 value={Task.day}
                 onChange={handleInput}
             />
-            <button type='submit'>Add</button>
-           </form>
+            <button onClick={handleSubmit}>Add</button>
+           </div>
             {
                 TaskList.map(task => <Contact Task={task.task} Day={task.day}/>)
             }
